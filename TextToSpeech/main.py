@@ -47,7 +47,7 @@ def speed():
 
 while True:
     print("Text: "+textTTS+"\n"+f"Speech: {language}\n")
-    alt=int(input("Settings\n1: Translate\n2: Speed\n3: Language(Speech)\n4: Done\nAnswer:"))
+    alt=int(input("Settings\n1: Translate\n2: Speed\n3: Language(Speech)\n4: Done\nPick one:"))
     
     # --all options-- #
     if alt == 1:  textTTS = tran()
