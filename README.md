@@ -1,7 +1,7 @@
 # TextToSpeech
 Text to speech and translate your sentences
 
-Imports:
+Librarys:
 gTTS,
 googletrans
 
