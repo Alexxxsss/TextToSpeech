@@ -77,3 +77,5 @@ for i in range(5):
         clear() # clear console
 myobj.save(f"{FileName}.mp3") # File controll
 os.system(f"{FileName}.mp3") # File controll
+
+print(f"Done with downloading {FileName}.mp3")
