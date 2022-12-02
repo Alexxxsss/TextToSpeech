@@ -8,7 +8,7 @@ translator = Translator()
 clear = lambda: os.system('cls')
 clear()# clear console
 
-textTTS = input("Skriv en mening: ")
+textTTS = input("Write a sentence: ")
 
 
 # --Variables-- #
