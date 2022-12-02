@@ -39,11 +39,11 @@ def tran():
     
 def speed():
     clear() # clear console
-    x = input("1: Fast\n2: Slow")
+    x = input("1: Fast\n2: Slow\nChoose a speed: ")
     clear() # clear console
     
-    y = int(x-1) # convert to bool
-    return y
+    y = int(x) # convert to bool
+    return y-1
 
 while True:
     print("Text: "+textTTS+"\n"+f"Speech: {language}\n")
