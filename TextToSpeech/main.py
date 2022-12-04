@@ -36,7 +36,7 @@ def tran():
     
     translation = translator.translate(text, dest=language) # translate between languages
     return translation.text
-    
+
 def speed():
     clear() # clear console
     x = input("1: Fast\n2: Slow\nChoose a speed: ")
@@ -44,6 +44,7 @@ def speed():
     
     y = int(x) # convert to bool
     return y-1
+
 
 while True:
     print("Text: "+textTTS+"\n"+f"Speech: {language}\n")
@@ -62,10 +63,10 @@ while True:
     myobj = gTTS(text=textTTS, lang=language, slow=fs) #apply options
     
     clear() # clear console
-
+clear() # clear console
 for i in range(5):
     for e in range(4):
-        clear() # clear console
+        
         
         # --console animation-- #
         if e == 1: print(".")
@@ -73,8 +74,8 @@ for i in range(5):
         if e == 3: print(". . .")
         time.sleep(0.2)
         # --console animation-- #
+    clear() # clear console 
         
-        clear() # clear console
 myobj.save(f"{FileName}.mp3") # File controll
 os.system(f"{FileName}.mp3") # File controll
 
