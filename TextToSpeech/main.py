@@ -12,6 +12,7 @@ textTTS = input("Write a sentence: ")
 
 
 # --Variables-- #
+fileF = ["wav","mp3","mp4"]
 fs = 0
 language = "en"
 # --Variables-- #
@@ -48,7 +49,7 @@ def speed():
 
 while True:
     print("Text: "+textTTS+"\n"+f"Speech: {language}\n")
-    alt=int(input("Settings\n1: Translate\n2: Speed\n3: Language(Speech)\n4: Done\nPick one:"))
+    alt=int(input("Settings\n1: Translate\n2: Speed\n3: Language(Speech)\n4: Done\nPick one: "))
     
     # --all options-- #
     if alt == 1:  textTTS = tran()
@@ -57,6 +58,8 @@ while True:
     if alt == 4: 
         clear() # clear console
         FileName = input("File Name: ")
+        form = int(input("1: .wav\n2: .mp3\n3: .mp4\nPick one: "))
+        form = form-1
         break
     # --all options-- #
     
@@ -74,9 +77,9 @@ for i in range(5):
         if e == 3: print(". . .")
         time.sleep(0.2)
         # --console animation-- #
-    clear() # clear console 
+        clear() # clear console 
         
-myobj.save(f"{FileName}.mp3") # File controll
-os.system(f"{FileName}.mp3") # File controll
+myobj.save(f"{FileName}."+fileF[form]) # File controll
+os.system(f"{FileName}."+fileF[form]) # File controll
 
-print(f"Done with downloading {FileName}.mp3")
+print(f"Done with downloading {FileName}."+fileF[form])
